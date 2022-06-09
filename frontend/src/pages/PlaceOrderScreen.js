@@ -78,8 +78,6 @@ export default function PlaceOrderScreen() {
       dispatch({ type: 'CREATE_SUCCESS' })
       localStorage.removeItem('cartItem')
       navigate(`/order/${data.order._id}`)
-
-      console.log(data)
     } catch (error) {
       dispatch({ type: 'CREATE_FAIL' })
       toast.error(getError(error))
