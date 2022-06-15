@@ -65,3 +65,7 @@ main {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
 }
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
