@@ -15,9 +15,10 @@ main {
   flex: 1;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-outline-primary {
   background-color: #f0c040;
-  color: black;
+  color: #000000;
 }
 
 .products {
@@ -68,4 +69,29 @@ main {
 
 .navbar-collapse {
   flex-grow: 0 !important;
+}
+
+/*sidebar*/
+
+.nav-branch {
+  font-weight: bold;
+}
+
+.side-navbar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+}
+
+.site-container {
+  transition: 0.4s;
+}
+.active-cont {
+  margin-left: 240px;
+}
+.active-nav {
+  left: 0;
 }
