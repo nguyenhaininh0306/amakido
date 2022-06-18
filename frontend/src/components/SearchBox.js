@@ -15,7 +15,7 @@ export default function SearchBox() {
   }
 
   return (
-    <Form onSubmit={submitHandle} className='d-flex me-auto'>
+    <Form onSubmit={submitHandle} className='d-flex'>
       <InputGroup>
         <FormControl
           type='text'

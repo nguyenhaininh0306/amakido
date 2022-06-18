@@ -67,10 +67,6 @@ main {
   color: #f08000;
 }
 
-.navbar-collapse {
-  flex-grow: 0 !important;
-}
-
 /*sidebar*/
 
 .nav-branch {
