@@ -44,8 +44,6 @@ export default function OrderHistoryScreen() {
     error: '',
   })
 
-  console.log(orders)
-
   useEffect(() => {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' })
@@ -70,6 +68,8 @@ export default function OrderHistoryScreen() {
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox variant='danger'>{error}</MessageBox>
+      ) : orders && orders.length === 0 ? (
+        <MessageBox variant='primary'>You do not have order</MessageBox>
       ) : (
         <table className='table'>
           <thead>
